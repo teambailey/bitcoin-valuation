@@ -1,0 +1,97 @@
+{
+	"extends": [
+		"airbnb",
+		"airbnb/hooks",
+		"plugin:react-hooks/recommended",
+		"eslint-config-prettier"
+	],
+	"plugins": [
+		"prettier"
+	],
+	"parser": "babel-eslint",
+	"rules": {
+		// Disabled
+		"react/react-in-jsx-scope": "off",
+		"no-tabs": 0,
+		"comma-dangle": 0,
+		"object-curly-newline": 0,
+		"no-unused-expressions": [
+			0,
+			{
+				"allowShortCircuit": true,
+				"allowTernary": true,
+				"allowTaggedTemplates": true
+			}
+		],
+		"no-underscore-dangle": 0,
+		// Warnings
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [
+					".js",
+					".jsx"
+				]
+			}
+		],
+		"no-mixed-spaces-and-tabs": 0,
+		"react/jsx-props-no-spreading": 1,
+		"react/forbid-prop-types": 1,
+		"import/no-extraneous-dependencies": 1,
+		"camelcase": [
+			1,
+			{
+				"properties": "never",
+				"ignoreDestructuring": true,
+				"ignoreImports": true,
+				"ignoreGlobals": true
+			}
+		],
+		"no-param-reassign": 1,
+		"no-plusplus": 1,
+		"react/jsx-no-bind": 1,
+		"no-restricted-globals": 1,
+		// Configurations
+		"indent": [
+			2,
+			"tab",
+			{
+				"SwitchCase": 1,
+				"offsetTernaryExpressions": true
+			}
+		],
+		"react/jsx-indent": [
+			2,
+			"tab"
+		],
+		"react/jsx-indent-props": [
+			2,
+			"tab"
+		],
+		"prettier/prettier": [
+			"error",
+			{
+				"printWidth": 80,
+				"useTabs": true,
+				"semi": true,
+				"singleQuote": true,
+				"trailingComma": "none",
+				"bracketSpacing": true,
+				"arrowParens": "always",
+				"proseWrap": "preserve",
+				"htmlWhitespaceSensitivity": "strict"
+			}
+		]
+	},
+	"globals": {
+		"console": "readonly",
+		"process": "readonly",
+		"fetch": "readonly",
+		"Promise": "readonly",
+		"window": "readonly",
+		"setInterval": "readonly",
+		"clearInterval": "readonly",
+		"document": "readonly",
+		"localStorage": "readonly"
+	}
+}
