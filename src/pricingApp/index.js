@@ -42,7 +42,12 @@ const PricingApp = () => {
 			{prices && (
 				<div className={styles.tiles}>
 					{prices.map(({ code, rate_float: float, description }) => (
-						<Tile code={code} float={float} description={description} />
+						<Tile
+							key={code}
+							code={code}
+							float={float}
+							description={description}
+						/>
 					))}
 				</div>
 			)}
