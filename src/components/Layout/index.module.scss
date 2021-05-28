@@ -1,0 +1,14 @@
+.maxWidth {
+	margin: 0 auto;
+	@media (min-width: 769px) {
+		max-width: 680px;
+	}
+}
+
+.spacing {
+	padding: 0 1rem;
+	@media (min-width: 1024px) {
+		padding: 0 4rem;
+		margin: 0 4rem;
+	}
+}

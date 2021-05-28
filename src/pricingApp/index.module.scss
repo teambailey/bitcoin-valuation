@@ -1,0 +1,40 @@
+.header {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+}
+
+.title {
+	flex: 1;
+	font-size: 2.5rem;
+	margin-bottom: 0;
+	padding-right: .5rem;
+	white-space: nowrap;
+}
+
+.lastUpdated {
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+	padding-right: 1.5rem;
+	font-size: .75rem;
+}
+
+.tiles {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.light {
+	color: #6b6b6b;
+}
+
+.ticker {
+	font-size: .5em;
+}
+
+.time {
+	margin-left: .25rem;
+	font-size: 1rem;
+}
+
