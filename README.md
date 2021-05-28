@@ -5,6 +5,7 @@ This project is a simple application that provides a realtime display of the val
 ## Requirements for installation and running the application locallly
 
 - node 16+
+- npm 7.13+
 
 ### Steps to get applcation running locally
 
